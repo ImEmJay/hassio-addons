@@ -17,7 +17,7 @@ LABEL org.label-schema.build-date=%%BUILD_DATE%% \
 # Install requirements for add-on
 RUN apk add --no-cache python python-dev py2-pip jq openssl-dev libusb musl-dev py-yaml gcc \
    && pip install flask \
-   && pip install --upgrade https://github.com/happyleavesaoc/python-firetv/zipball/master
+   && pip install --upgrade https://github.com/ImEmJay/python-firetv/zipball/
 
 # Python 3 HTTP Server serves the current working dir
 # So let's set it to our add-on persistent data directory.
